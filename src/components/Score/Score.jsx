@@ -4,9 +4,9 @@ const Score = ({score, scoreType}) => {
 
   return (
     <div className='score'>
-        <div className='score_container' data-testid="score">
+        <div className='score_container'>
             <p>{scoreType}</p>
-            <p>{score}</p>            
+            <p data-testid="score">{score}</p>            
         </div>
     </div>
   )
