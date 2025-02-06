@@ -1,6 +1,5 @@
 import './App.css'
-import { Home } from './containers'
-
+import { Home } from './containers';
 
 function App() {
     return (

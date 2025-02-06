@@ -19,13 +19,13 @@ const Button = ({btnColor, correctColor, resetColor, updateCount, showMessage, c
                 showMessage("Correct");
                 setTimeout(() => {
                     endGame()
-                },700)                             
+                },1000)                             
             } else {
                 updateCount(false);
                 showMessage("Wrong");
                 setTimeout(() => {
                     endGame()
-                },700) 
+                },1000) 
             }
                       
         }                

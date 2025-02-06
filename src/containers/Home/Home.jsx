@@ -35,7 +35,7 @@ const Home = () => {
         setVisible(true)
         setTimeout(() => {
             setVisible(false)
-        },700);
+        },1000);
     }
 
     const updateCount = (value) => {
@@ -53,9 +53,9 @@ const Home = () => {
     }
 
     const endGame = () => {
-        setVisible(true);
-        setMessage("Game Over");
         count > 7 ? end.play() : end2.play();
+        setVisible(true);
+        setMessage("Game Over");        
     }
  
     useEffect(() => {
