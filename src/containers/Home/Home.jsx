@@ -14,6 +14,10 @@ const Home = () => {
     const failure = new Audio(fail2);
     const end = new Audio(finish);
     const end2 = new Audio(finish2);
+    success.load();
+    failure.load();
+    end.load();
+    end2.load();
 
     const generateColor = () => {               
         const result = new Set();
