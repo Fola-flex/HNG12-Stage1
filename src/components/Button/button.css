@@ -1,0 +1,12 @@
+.button {
+    padding: 2.5rem 3rem;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;    
+}
+
+@media screen and (max-width: 480px) {
+    .button {
+        padding: 1.5rem 2.5rem;
+    }
+}

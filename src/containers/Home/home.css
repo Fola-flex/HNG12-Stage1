@@ -1,0 +1,141 @@
+header {
+    background-color: black;
+    padding: 1rem;
+}
+
+nav {
+    text-align: center;
+}
+
+.title {
+    color: white;
+}
+
+main {
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.quiz {
+    width: 100%;
+    max-width: 80rem;
+    text-align: center;
+}
+
+.quiz_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    gap: 3rem;
+    flex-basis: max-content;    
+}
+
+.quiz .color {
+    width: 100%;
+}
+
+.quiz .heading {
+    font-size: 3rem;
+    margin-bottom: 1rem
+}
+
+.answer {
+    width: 100%;
+}
+
+.answer_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.answer_container p {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.answer_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.answer_restart {
+    width: 100%;
+    text-align: center;
+}
+
+.answer_restart .restart_btn {
+    padding: 1rem 1.2rem;
+    font-size: 1rem;
+    outline: 0;
+    border: none;
+    background-color: #008cff;
+    color: white;
+    font-family: "Luckiest Guy", serif;
+}
+
+.answer_restart .restart_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.answer_restart .restart_btn:active {
+    color: white;
+    background-color: #24243e;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        padding: 1rem;
+        grid-area: 2rem;
+    }
+
+    .answer_buttons {
+        gap: 1.5rem;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .quiz_container {
+        gap: 1rem;
+    }
+
+    .quiz .heading {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main {
+        gap: 1rem;
+    }
+
+    .quiz_container {
+        gap: 0.5rem;
+    }
+
+    .quiz .heading {
+        font-size: 1rem;
+    }
+
+    .answer_container p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .quiz_container {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,59 @@
+.modal {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_container {
+    width: 15rem;
+    height: 15rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 1rem;
+}
+
+.modal_container h1 {
+    color: black;
+}
+
+.modal_container p {    
+    font-size: 1.5rem;
+    color: black;
+}
+
+.modal_container .modal_score {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal_container .new_game_btn {
+    outline: none;
+    border: none;
+    background-color: black;
+    padding: 1rem 1.2rem;
+    font-family: 'Luckiest Guy', serif;
+    color: white;
+}
+
+.modal_container .new_game_btn:hover {   
+    background-color: #008cff;    
+    color: white;
+}
+
+.modal_container .new_game_btn:active{   
+    background-color: #24243e;    
+    color: white;
+}
+

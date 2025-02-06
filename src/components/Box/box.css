@@ -1,0 +1,25 @@
+.box {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box_container {
+    height: 12rem;
+    width: 25rem;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .box_container {
+        width: 15rem;
+        height: 11rem;
+    }    
+}
+
+@media screen and (max-width: 480px) {
+    .box_container {
+        width: 12rem;
+        height: 9rem;
+    }    
+}
